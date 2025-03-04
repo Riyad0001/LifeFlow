@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blood Donation Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: var(--light-theme-bg);">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-hand-holding-heart"></i>LifeFlow
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
+                <li class="nav-item"><a class="nav-link" href="#vision">Vision</a></li>
+                <li class="nav-item"><a class="nav-link" href="#benefits">Benefits</a></li>
+                <li class="nav-item"><a class="nav-link" href="#how-to-donate">How to Donate</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            </ul>
+          </div> -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto" id="nav-items">
+              <!-- Nav items will be inserted here dynamically -->
+            </ul>
+          </div>
+          
+        </div>
+      </nav>
+  <!-- Navbar -->
+  <!-- <nav class="navbar navbar-expand-lg navbar-light" style="background-color: var(--light-theme-bg);">
+    <div class="container">
+      <a class="navbar-brand" href="#">Blood Donation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mission">Mission</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vision">Vision</a></li>
+          <li class="nav-item"><a class="nav-link" href="#benefits">Benefits</a></li>
+          <li class="nav-item"><a class="nav-link" href="#how-to-donate">How to Donate</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <div>
+        <h1>Save Lives, Donate Blood</h1>
+        <p>Join us in our mission to create a healthier community and save lives through blood donation.</p>
+        <a href="#mission" class="btn btn-primary btn-lg mt-3">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission Section -->
+  <section id="mission" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Our Mission</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="./Images/images (1).jpg" alt="Our Mission" class="img-fluid rounded" />
+        </div>
+        <div class="col-md-6">
+          <p>
+            Our mission is to promote the importance of blood donation, raise awareness about its life-saving impact, and support the community by ensuring a steady supply of safe blood for those in need.
+          </p>
+          <p>
+            We work closely with hospitals, communities, and donors to ensure that every drop of donated blood makes a difference.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision Section -->
+  <section id="vision" class="section">
+    <div class="container">
+      <h2 class="section-title">Our Vision</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 order-md-2">
+          <img src="./Images/blood-donation-health-benefits.jpg" alt="Our Vision" class="img-fluid rounded" />
+        </div>
+        <div class="col-md-6 order-md-1">
+          <p>
+            We envision a world where every individual understands the significance of donating blood.
+          </p>
+          <p>
+            Our goal is to eliminate blood shortages, save countless lives, and build a healthier future for all.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">Benefits of Blood Donation</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="mb-3">
+            <i class="benefit-icon bi bi-heart-fill"></i>
+          </div>
+          <h4>Save Lives</h4>
+          <p>Every donation can help save up to three lives, giving hope to patients in need.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="mb-3">
+            <i class="benefit-icon bi bi-person-check-fill"></i>
+          </div>
+          <h4>Health Benefits</h4>
+          <p>Regular blood donation can improve cardiovascular health and reduce iron overload.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="mb-3">
+            <i class="benefit-icon bi bi-people-fill"></i>
+          </div>
+          <h4>Community Support</h4>
+          <p>Becoming a donor builds a supportive community and inspires others to give back.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Information Posters -->
+<div class="cta-section">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="info-poster bg-white p-4 shadow">
+                    <h3 class="text-danger"><i class="fas fa-info-circle me-2"></i>Did You Know?</h3>
+                    <ul class="list-unstyled">
+                        <li class="my-3">✅ Blood cannot be manufactured</li>
+                        <li class="my-3">✅ Only 3% donate blood annually</li>
+                        <li class="my-3">✅ Donation takes less than 15 minutes</li>
+                        <li class="my-3">✅ You can donate every 3 months</li>
+                    </ul>
+                    <img src="./Images/photo-1583417319070-4a69db38a482.jpg" 
+                         class="img-fluid rounded" 
+                         alt="Donation process">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="info-poster bg-white p-4 shadow">
+                    <h3 class="text-danger"><i class="fas fa-shield-alt me-2"></i>Safety First</h3>
+                    <ul class="list-unstyled">
+                        <li class="my-3">✅ Sterile equipment used</li>
+                        <li class="my-3">✅ Certified professionals</li>
+                        <li class="my-3">✅ Strict hygiene protocols</li>
+                        <li class="my-3">✅ Post-donation care</li>
+                    </ul>
+                    <img src="./Images/istockphoto-1334961240-612x612.jpg" 
+                         class="img-fluid rounded nothing-doi" 
+                         alt="Safety measures">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section bg-light">
+    <div class="container">
+      <h2 class="section-title">What Our Donors Say</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active text-center">
+            <blockquote class="blockquote">
+              <p>"Donating blood not only saved lives, but it also gave me a sense of purpose and community."</p>
+            </blockquote>
+            <footer class="blockquote-footer"><cite title="Source Title">Jane Doe</cite></footer>
+          </div>
+          <div class="carousel-item text-center">
+            <blockquote class="blockquote">
+              <p>"The donation process was smooth and the staff were very supportive. I highly recommend it!"</p>
+            </blockquote>
+            <footer class="blockquote-footer"><cite title="Source Title">John Smith</cite></footer>
+          </div>
+          <div class="carousel-item text-center">
+            <blockquote class="blockquote">
+              <p>"A simple act of donating blood can create a ripple effect of hope and healing."</p>
+            </blockquote>
+            <footer class="blockquote-footer"><cite title="Source Title">Emily Johnson</cite></footer>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Who can donate blood?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Generally, healthy adults aged between 18 and 65 with a valid ID can donate blood. Specific criteria may apply.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              How often can I donate blood?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              You can typically donate whole blood every 8 weeks. Consult with your local donation center for exact guidelines.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              What are the benefits of donating blood?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Donating blood helps save lives, can improve your health, and contributes to a strong community spirit.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-md-4">
+                <h4>About LifeFlow</h4>
+                <p class="mt-3">Connecting blood donors with recipients through secure, verified channels since 2018.</p>
+                <div class="social-links mt-4">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="col-md-2">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled mt-3">
+                    <li class="mb-2"><a href="#" class="footer-link">FAQ</a></li>
+                    <li class="mb-2"><a href="#" class="footer-link">Eligibility</a></li>
+                    <li class="mb-2"><a href="#" class="footer-link">Locations</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h5>Contact</h5>
+                <ul class="list-unstyled mt-3">
+                    <li class="mb-2"><i class="fas fa-phone me-2"></i>+1 (555) 123-4567</li>
+                    <li class="mb-2"><i class="fas fa-envelope me-2"></i>help@lifeflow.org</li>
+                    <li><i class="fas fa-map-marker-alt me-2"></i>New York, USA</li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h5>Legal</h5>
+                <ul class="list-unstyled mt-3">
+                    <li class="mb-2"><a href="#" class="footer-link">Privacy Policy</a></li>
+                    <li class="mb-2"><a href="#" class="footer-link">Terms of Service</a></li>
+                    <li><a href="#" class="footer-link">Safety Guidelines</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <hr class="mt-5">
+        
+        <div class="row mt-4">
+            <div class="col text-center">
+                <p class="mb-0">&copy; 2023 LifeFlow. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./Auth.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

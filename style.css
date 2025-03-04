@@ -1,0 +1,235 @@
+/* Unique Light Theme Colors */
+:root {
+    --light-theme-bg: #add8e6;       /* Pastel light blue */
+    --light-theme-text: #0d3b66;     /* Dark blue for contrast */
+    --light-theme-hover: #00509e;    /* Darker blue for hover */
+    --loader-color: #00509e;         /* Loader border-top color */
+  }
+  .event-card {
+    transition: transform 0.3s;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  .event-card:hover {
+    transform: translateY(-5px);
+  }
+  .loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid var(--loader-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+    display: none;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .filter-section {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--light-theme-text) !important;
+  }
+  .navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: var(--light-theme-text) !important;
+  }
+  .navbar-nav .nav-item .nav-link:hover {
+    color: var(--light-theme-hover) !important;
+  }
+  /* footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  } */
+
+/* Footer Styling */
+.main-footer {
+    background: rgb(108, 149, 173);
+    color: white;
+    padding: 50px 0;
+    font-size: 16px;
+}
+
+.main-footer h4,
+.main-footer h5 {
+    font-weight: 600;
+    color: #fff;
+}
+
+.main-footer p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.main-footer .footer-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease-in-out;
+}
+
+.main-footer .footer-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.main-footer .social-links a {
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.main-footer .social-links a:hover {
+    background: white;
+    color: #4ea1e6;
+}
+
+.main-footer ul {
+    padding: 0;
+}
+
+.main-footer ul li {
+    list-style: none;
+    font-size: 14px;
+}
+
+.main-footer ul li i {
+    color: #ffdd57;
+}
+
+.main-footer hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .main-footer {
+        text-align: center;
+    }
+    .main-footer .social-links {
+        justify-content: center;
+    }
+}
+/* Unique Light Theme Colors */
+    :root {
+      --light-theme-bg: #add8e6;       
+      --light-theme-text: #0d3b66;       
+      --light-theme-hover: #00509e;     
+      --loader-color: #00509e;           
+    }
+    /* Global Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      color: var(--light-theme-text);
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .section-title {
+      margin-bottom: 40px;
+      text-align: center;
+      font-weight: bold;
+    }
+    /* Hero Section */
+    .hero {
+      position: relative;
+      background: url('https://loremflickr.com/1600/900/blood-donation?lock=1') no-repeat center center/cover;
+      height: 70vh;
+      color: #fff;
+    }
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.25rem;
+    }
+    /* Cards & Loader */
+    .event-card {
+      transition: transform 0.3s;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    .event-card:hover {
+      transform: translateY(-5px);
+    }
+    .loader {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid var(--loader-color);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+      display: none;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    /* Filter Section */
+    .filter-section {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    /* Navbar */
+    .navbar {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--light-theme-text) !important;
+    }
+    .navbar-nav .nav-item .nav-link {
+      font-size: 1rem;
+      padding-left: 15px;
+      padding-right: 15px;
+      color: var(--light-theme-text) !important;
+    }
+    .navbar-nav .nav-item .nav-link:hover {
+      color: var(--light-theme-hover) !important;
+    }
+    /* Benefit Icons */
+    .benefit-icon {
+      font-size: 3rem;
+      color: #dc3545;
+    }
+    /* Testimonials Carousel */
+    .carousel-item blockquote {
+      font-size: 1.25rem;
+      font-style: italic;
+    }
+    .carousel-item cite {
+      font-size: 1rem;
+      color: var(--light-theme-hover);
+    }
+  

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complete Profile</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: var(--light-theme-bg);">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-hand-holding-heart"></i>LifeFlow
+        </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto" id="nav-items">
+          <!-- Nav items will be inserted here dynamically -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+<body>
+    <div class="container mt-5">
+        <form id="profileForm">
+            <select id="bloodGroup" class="form-select" required>
+                <option value="">Select Blood Group</option>
+                <!-- Options for blood groups -->
+            </select>
+            
+            <input type="text" id="address" placeholder="Address" required>
+            <input type="number" id="age" placeholder="Age" min="18" max="65" required>
+            
+            <button type="submit" class="btn btn-primary">Save Profile</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('profileForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const profileData = {
+                blood_group: document.getElementById('bloodGroup').value,
+                address: document.getElementById('address').value,
+                age: document.getElementById('age').value
+            };
+
+            try {
+                const response = await fetch('http://localhost:8000/api/auth/profile/', {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Token ${localStorage.getItem('token')}`
+                    },
+                    body: JSON.stringify(profileData)
+                });
+
+                if (response.ok) {
+                    window.location.href = 'dashboard.html';
+                }
+            } catch (error) {
+                console.error('Profile update error:', error);
+            }
+        });
+    </script>
+       <script src="./Auth.js"></script> 
+</body>
+</html>
